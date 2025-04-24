@@ -1,0 +1,21 @@
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/025/871/495/non_2x/travel-destination-background-and-template-design-with-travel-destinations-and-famous-landmarks-and-attractions-for-tourism-let-s-go-travel-illustration-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large;
+}
+#div1{
+    height: 850px;
+    /* width: 1000px; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+   
+}
+/* #div2{
+    height: 500px;
+    width: 500px;
+} */
