@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        #nav{
+            gap: 8px;
+
+        }
+        div{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        input{
+            width: 850px;
+            height: 18px;
+            border: none;
+           
+            outline: none;
+        }
+        textarea{
+            width: 1880px;
+            border: none;
+            outline: none;
+            margin-left: 5px;
+           
+            resize: none;
+            overflow: hidden;
+           
+        }
+        p{
+            display: inline;
+        }
+        #sub{
+            height: 20px;
+        }
+        #com{
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="nav">
+    <a href="#"><img src="https://img.icons8.com/?size=32&id=16028&format=png" alt="Attachmenta"></a>
+    <a href="#"><img src="https://img.icons8.com/?size=24&id=85940&format=png" alt="Send"></a>
+    <br>
+    <a href="#"><img src="https://img.icons8.com/?size=24&id=84119&format=png" alt="Menu" ></a>
+</div>
+</div>
+     <hr>
+    <p>From :</p>  <input type="email" >
+    <hr>
+     <details><summary><p>To :</p> <input type="email"></summary>
+        <hr>
+      <p> Cc :</p><input type="email"><br><hr> <p>Bcc :</p><input type="email" >
+
+    </details>
+    <hr>
+    <textarea name="Subject" placeholder="Subject" id="sub" rows="1"></textarea>
+    <hr>
+    <textarea name="Compose email"  id="com"></textarea>
+
+    
+</body>
+</html>
