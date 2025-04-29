@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+</head>
+<body class="">   
+     <div class="bg-amber-400 flex  justify-center h-screen items-center">
+    <div class="flex flex-col bg-white rounded-md gap-3  p-5">
+        <p class="text-center">Check Even or Odd</p>
+        <input class="border-1 rounded-md" id="value" type="number" placeholder="Enter the number">
+        <button class="bg-purple-300 hover:bg-purple-700 hover:text-white rounded-md" onclick="evenorodd()">Check Even</button>
+        <button class="bg-green-300 hover:bg-green-700 hover:text-white rounded-md" onclick="leap()">Check Leaper</button>
+        <button class="bg-blue-300 hover:bg-blue-700 hover:text-white rounded-md" onclick="posandneg()">Positive/Negitive</button>
+        <button class="bg-violet-300 hover:bg-violet-700 hover:text-white rounded-md" onclick="gradeofstudents()">Grade</button>
+        <button class="bg-cyan-300 hover:bg-cyan-700 hover:text-white rounded-md" onclick="calculateprice()">Ticket Price</button>
+
+        <p class="text-center" id="result"></p>
+    </div>
+</div>
+<script>
+    function evenorodd(){
+        const value = document.getElementById("value").value;
+
+        if (value %2 == 0){
+            console.log('Even');
+            document.getElementById("result").innerHTML = "Even";
+
+        }
+        else{
+            console.log('Odd');
+            document.getElementById("result").innerHTML = 'Odd';
+        }
+
+      
+    }
+
+    function leap(){
+        const year = document.getElementById("value").value;
+
+        if (year%4 == 0){
+            console.log('True');
+            document.getElementById("result").innerHTML = 'True';
+
+        }
+        else{
+            console.log('False');
+            document.getElementById("result").innerHTML = 'False';
+        }
+
+      
+    }
+
+
+
+    function posandneg(){
+        const n = document.getElementById("value").value;
+        // console.log(value);
+    
+    if(n>0){
+        console.log('Postive');
+        document.getElementById("result").innerHTML = 'Postive';
+        
+    }
+    else{
+        
+        console.log('Negative');
+        document.getElementById("result").innerHTML = 'Negative'
+
+    }
+}
+   
+   
+    function gradeofstudents(){
+        const m = document.getElementById("value").value;
+        // console.log(value);
+
+    if(m>=91&& m<=100){
+        console.log('A Grade');
+        document.getElementById("result").innerHTML = 'A Grade'
+    }
+    else if(m>=81 && m<=90){
+        console.log('B Grade');
+        document.getElementById("result").innerHTML = 'B Grade'
+    }
+     else if(m>=71 && m<=80){
+        console.log('C Grade');
+        document.getElementById("result").innerHTML = 'C Grade'
+     }
+    
+    else if(m>=61 && m<=70){
+       console.log('D Grade');
+        document.getElementById("result").innerHTML = 'D Grade'
+    }
+    else if(m<60 && m>0){
+         console.log('Fail');
+        document.getElementById("result").innerHTML = 'fail'
+    }
+    else{
+           console.log('Invalid No');
+        document.getElementById("result").innerHTML = 'Invalid No'
+    }
+
+
+}
+
+
+function calculateprice(){
+    const p = document.getElementById("value").value;
+
+    if(p>=0 && p<=12){
+        console.log('Price = 5');
+        document.getElementById("result").innerHTML = 'Price = 5'
+    }
+    else if(p>=13 && p<=18){
+        console.log('Price = 10');
+        document.getElementById("result").innerHTML = 'Price = 10'
+    }
+    else if (p>=19 && p<=60){
+        console.log('Price = 20');
+        document.getElementById("result").innerHTML = 'Price = 20'    
+    }
+    else if (p<=85 && p>=60){
+        console.log('Price = 15');
+        document.getElementById("result").innerHTML = 'Price = 15'      
+    }
+    else{
+        console.log('Null');
+        document.getElementById("result").innerHTML = 'Null'
+       
+    }
+}
+
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>
