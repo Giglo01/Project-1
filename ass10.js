@@ -1,5 +1,7 @@
-function sumoftwono(a,b){
+// program to calculate the sum of two numbers.
+
+function sumoftwonumber(a,b){
     return a + b;
 }
-   let result = sumoftwono(45, 50);
+   let result = sumoftwonumber(45, 50);
    console.log("sum:",result);
